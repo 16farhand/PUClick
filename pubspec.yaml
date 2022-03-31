@@ -1,0 +1,39 @@
+name: benerit
+version: 1.0.0+1
+publish_to: none
+description: A new Flutter project.
+environment: 
+  sdk: '>=2.12.0 <3.0.0'
+
+dependencies: 
+  intl: ^0.17.0
+  cupertino_icons: ^1.0.2
+  get: 4.5.1
+  get_storage: 2.0.3
+  lottie: 1.2.1
+  introduction_screen: 2.1.0
+  flutter_html: ^2.2.1
+  url_launcher: ^6.0.17
+  
+  flutter: 
+    sdk: flutter
+
+
+
+dev_dependencies: 
+  flutter_lints: ^1.0.0
+  flutter_test: 
+    sdk: flutter
+  flutter_launcher_icons: ^0.9.2
+
+flutter: 
+  assets: 
+    - assets/lottie/
+    - assets/logo/
+  uses-material-design: true
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/logo/plane.png"
+
