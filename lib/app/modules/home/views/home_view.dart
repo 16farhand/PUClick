@@ -319,6 +319,32 @@ class HomeView extends GetView<HomeController> {
                                   ),
                                 ),
                               ),
+
+                              InkWell(
+                                onTap: () => controller.launchURL10(),
+                                child: Card(
+                                  shape: RoundedRectangleBorder(
+                                      borderRadius:
+                                          BorderRadius.circular(15.0)),
+                                  elevation: 8,
+                                  child: Container(
+                                    width: Get.width * 0.4,
+                                    height: Get.width * 0.4,
+                                    child: Column(
+                                      children: [
+                                        Image.asset("assets/logo/cabinweb.png",
+                                            height: Get.width * 0.3,
+                                            width: Get.width * 0.3),
+                                        SizedBox(height: 10),
+                                        Text("Cabin Web",
+                                            style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                                fontSize: 18)),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ),
                             ],
                           ),
                           SizedBox(height: 20),

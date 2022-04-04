@@ -11,6 +11,7 @@ class HomeController extends GetxController {
   var ohr = "https://safety.garuda-indonesia.com/";
   var regmed = "https://registrasi.blubalaihatpen.id/";
   var psfrep = "https://docs.google.com/forms/d/e/1FAIpQLSdetRN2WdrXJG4V2E-yXi1H9g92UbsSWJyW0KEvUBv6xXnbnQ/viewform";
+  var cabinweb = "https://cabinweb.garuda-indonesia.com/";
 
   final count = 0.obs;
   @override
@@ -53,5 +54,8 @@ class HomeController extends GetxController {
   }
   void launchURL9() async {
     await canLaunch(psfrep) ? await launch(psfrep) : throw 'Could not launch ${psfrep}';
+  }
+  void launchURL10() async {
+    await canLaunch(cabinweb) ? await launch(cabinweb) : throw 'Could not launch ${cabinweb}';
   }
 }
